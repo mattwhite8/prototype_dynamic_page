@@ -7,5 +7,6 @@ $(document).ready(function(){
 		var pageHeader = $("<h1>");
 		pageHeader.text(data.category);
 		$(".page-header").append(pageHeader);
+		
 	})
 });
