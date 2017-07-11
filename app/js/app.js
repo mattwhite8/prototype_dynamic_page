@@ -6,11 +6,13 @@ $(document).ready(function(){
 		if(selection.attr('data-cart') === 'no'){
 			selection.attr('data-cart', 'yes');
 			$('.buy').text("Remove Item");
+			$('.buy').removeClass('buy-green').addClass('buy-black');
 			shoppingTotal += parseFloat(selection.attr('data-price'));
 			$('.shopping-total').text("$" + parseFloat(shoppingTotal).toFixed(2));
 		}else{
 			selection.attr('data-cart', 'no');
 			$('.buy').text("Add to Cart");
+			$('.buy').removeClass('buy-black').addClass('buy-green');
 			shoppingTotal -= parseFloat(selection.attr('data-price'));
 			$('.shopping-total').text("$" + parseFloat(shoppingTotal).toFixed(2));
 		}
