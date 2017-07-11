@@ -1,0 +1,22 @@
+{
+  "name": "prototype_part_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattwhite8/prototype_dynamic_page.git"
+  },
+  "author": "Matt White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattwhite8/prototype_dynamic_page/issues"
+  },
+  "homepage": "https://github.com/mattwhite8/prototype_dynamic_page#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
