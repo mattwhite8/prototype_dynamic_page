@@ -1,11 +1,16 @@
 body {
 	background-color: #638FC9;
 	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 }
 
 .container-fluid {
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.panel-title {
+	font-size: 24px;
 }
 
 .page-header, .shopping-total-header, .product-title {

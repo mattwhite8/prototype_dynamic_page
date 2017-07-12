@@ -1,3 +1,6 @@
+/* eslint-disable no-alert, no-console */
+/*eslint-env node*/
+
 // Dependencies
 var express = require("express");
 

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mattwhite8/prototype_dynamic_page#readme",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0"
   }
 }
