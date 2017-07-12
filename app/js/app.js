@@ -4,6 +4,7 @@ $(document).ready(function(){
 	var shoppingTotal = parseFloat(0.00);
 	var currentImg; //where we store the current item shown
 
+	//logic for updating the cart total and changing button style
 	function buyMe(selection){
 		if(selection.attr("data-cart") === "no"){
 			selection.attr("data-cart", "yes");
@@ -64,7 +65,7 @@ $(document).ready(function(){
 	});
 
 	$(".slider-for").on("init", function(){
-		//on init, grab title and price of first slide
+		//on init, grab title,  price of first slide and set the currentImg var
 		var title = $("[data-slick-index='0']").attr("data-title");
 		var price = $("[data-slick-index='0']").attr("data-price");
 		currentImg = $("[data-slick-index='0']");
@@ -72,6 +73,7 @@ $(document).ready(function(){
 		$(".product-title").text(title);
 		$(".price").text("$" + price);
 
+		//data-cart starts at no but double checking
 		if($("[data-slick-index='0']").attr("data-cart") === "no"){
 			$(".buy").text("Add to Cart");
 		}else {
